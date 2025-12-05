@@ -411,7 +411,7 @@ export fn foo_optimized(x: f64) f64 {
 // Pseudo-Zig code
 export fn foo_optimized(x: f64) f64 {
     #[setFloatMode=.optimized] {
-      return x + big - big;
+    	return x + big - big;
     }
 }
 // or
@@ -673,8 +673,8 @@ const Empty = struct {
 <p>However I don’t understand the rationale behind this design in Zig. In C, the <code>.</code> exists to remove the ambiguity between assigning to a struct field and using <code>a = b</code> as an expression (because assignments are expressions in C). As an assignment is not an expression in Zig, I don’t see why the <code>.</code> is necessary. And Zig does not support C-style array initializer syntax either:</p>
 
 <pre><code class="language-c">int x[] = {
-  [1] = 123,
-  [0] = 345
+	[1] = 123,
+	[0] = 345
 };
 </code></pre>
 
