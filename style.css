@@ -103,7 +103,7 @@ img {
   padding: 0;
 }
 
-.section_item:before {
+.section-item:before {
   counter-increment: ol-counter;
   content: "0" counter(ol-counter) ". ";
 }
