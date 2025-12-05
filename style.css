@@ -5,9 +5,9 @@ html {
 body {
   margin: 3em auto;
   margin-bottom: 10em;
-  max-width: 50em;
+  max-width: 70em;
   line-height: 1.62;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Tahoma', sans-serif;
   background: #fff;
   color: #000;
   padding: 0 2em;
@@ -17,6 +17,12 @@ pre {
   font-family: 'Inconsolata', monospace;
   font-weight: bold;
   padding: 2ch 2ch;
+  background: #ffffe8;
+  padding: 2px 6px;
+  color: #118;
+  border: 1px solid #ddb;
+  border-radius: 6px;
+  overflow: scroll;
 }
 
 hr {
@@ -26,13 +32,25 @@ hr {
 code {
   font-family: 'Inconsolata', monospace;
   font-weight: bold;
+  background: #ffffe8;
+  padding: 2px 3px;
+  color: #118;
+  border: 1px solid #ddb;
+  border-radius: 3px;
 }
+
+pre code {
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+
 
 h1, h2, h3 {
   line-height: 1.2;
-  padding-top: 1.2em;
+  padding-top: 0.2em;
   margin-bottom: 0.625em;
-  font-weight: normal;
 }
 
 a {
@@ -105,7 +123,7 @@ img {
 
 .section-item:before {
   counter-increment: ol-counter;
-  content: "0" counter(ol-counter) ". ";
+  content: counter(ol-counter) ". ";
 }
 
 body::-webkit-scrollbar {
